@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <com.ltvu93.photowithtagsview.widget.PhotoWithTagsView
+        android:id="@+id/activity_main_photo_with_tags_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/activity_main_fl_top_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@color/black_opacity_50"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/activity_main_iv_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_close" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/activity_main_tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="@color/white"
+                android:textSize="17.2dp" />
+
+            <Switch
+                android:id="@+id/activity_main_sb_edit"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="4.4dp"
+                android:layout_marginEnd="14.4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show"
+                android:textColor="@color/white"
+                android:textSize="17.2dp" />
+
+            <Switch
+                android:id="@+id/activity_main_sb_show"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="4.4dp"
+                android:layout_marginEnd="14.4dp" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

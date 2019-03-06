@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="true"
+    tools:ignore="MissingPrefix">
+
+    <FrameLayout
+        android:id="@+id/item_tag_fl_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_tag_patch"
+        android:minWidth="50dp"
+        android:minHeight="40dp">
+
+        <EditText
+            android:id="@+id/item_tag_et_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@android:color/transparent"
+            android:imeOptions="actionDone"
+            android:inputType="textNoSuggestions|textMultiLine"
+            android:minWidth="50dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/rect_cursor_white"
+            android:textSize="13.4dp">
+
+        </EditText>
+
+        <requestFocus />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/item_tag_iv_remove"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="end"
+        android:background="@drawable/rect_rounded_black_opacity"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_close"
+        android:visibility="visible" />
+</FrameLayout>
